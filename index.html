@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lineare Funktionen</title>
+  
+
+</head>
+<body style="background-color: #B9D1EA; margin-top: 1em; ">
+       
+
+    <style> 
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+         .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white;font-size:0.9em; font-family: Verdana, Sans-serif;margin:0.5em; }
+        input {background-color:yellow; }
+    </style>
+    
+	
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Lineare Funktionen</p>
+  
+    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+        <p class = "Aufgabe" ><span style = "background-color:white;">Ergänzen Sie die Wertetabellen für die Graphen der Funktionen:</span></p>
+
+        <!--//Aufgabe 2-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 1
+
+y = 2x     x      -2      2 
+           y    <input type="text" id="Eintrag1" maxlength="2" size="1" style= background-color:yellow ></input>    4</strong> <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p></pre> 
+ 
+
+                      <script>
+                        function Aufgabe1() { 
+                                                
+                          if (Eintrag1.value=="-4") {alert("Richtig"); document.getElementById("Pruef1").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag1.value!=="-4" && Eintrag1.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef1").disabled= true; document.getElementById("Eintrag1").value="-4"; window.open('LFunkt_Aufgabe1.html');}
+                               
+                          else if (Eintrag1.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 2
+
+y = -3x     x      -2       2 
+            y       6</strong>   <button  onclick="window.open('Pytha_Aufgabe1.html');" >Lösung</button></p></pre>
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 3
+
+y = 0,4x     x       -4        4
+             y     <input type="text" id="Eintrag3" maxlength="4" size="1" style= background-color:yellow ></input>     1.6</strong> <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button></p></pre> 
+ 
+
+                      <script>
+                        function Aufgabe3() { 
+                                                
+                          if (Eintrag3.value=="-1,6") {alert("Richtig"); document.getElementById("Pruef3").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag3.value!=="-1,6" && Eintrag3.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef3").disabled= true; document.getElementById("Eintrag3").value="-1,6"; window.open('LFunkt_Aufgabe3.html');}
+                               
+                          else if (Eintrag3.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 4
+
+y = - 0,8x     x       -1        4
+               y       0,8</strong>   <button  onclick="window.open('Pytha_Aufgabe4.html');" >Lösung</button></p></pre>
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 5
+
+Ein Flugzeug verbraucht auf 200 km 1800 l Kerosin.
+a) Wie lautet die Funktionsgleichung, die den Verbrauch V 
+   abhängig von der Strecke s beschreibt?                             
+b) Wie lautet die Funktionsgleichung, die die Strecke s       
+   abhängig vom Verbrauch V beschreibt?                          
+c) Ergänzen Sie die Wertetabelle    für den Graphen der Funktion V 
+   abhängig von s.:  
+   s in km     0        200                                                                                                     
+   V in l    <input type="text" id="Eintrag5" maxlength="1" size="1" style= background-color:yellow ></input>     1800   <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button>
+d) Welche Strecke hat das Flugzeug nach einem Verbrauch von 10 000 l zurückgelegt?   
+e) Wie viel l Kerosin verbraucht es für eine Strecke von 6 000 km? </strong></p></pre> 
+ 
+
+                      <script>
+                        function Aufgabe5() { 
+                                                
+                          if (Eintrag5.value=="0") {alert("Richtig"); document.getElementById("Pruef5").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag5.value!=="0" && Eintrag5.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef5").disabled= true; document.getElementById("Eintrag5").value="0"; window.open('LFunkt_Aufgabe5.html');}
+                               
+                          else if (Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>               
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 6
+
+y = 0,5x + 4     x      -2      4 
+                  y   </strong><button  onclick="window.open('Pytha_Aufgabe4.html');" >Lösung</button>  6</strong>   </p></pre>
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 7
+
+y = -4x + 60     x      -4      10          
+                 y      76    </strong><input type="text" id="Eintrag7" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button></p></pre> 
+ 
+
+                      <script>
+                        function Aufgabe7() { 
+                                                
+                          if (Eintrag7.value=="20") {alert("Richtig"); document.getElementById("Pruef7").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag7.value!=="20" && Eintrag7.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef7").disabled= true; document.getElementById("Eintrag7").value="20"; window.open('LFunkt_Aufgabe7.html');}
+                               
+                          else if (Eintrag7.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>               
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 8
+
+y = x - 2     x      -3      3
+              y   </strong><button  onclick="window.open('Pytha_Aufgabe4.html');" >Lösung</button>  1</strong>   </p></pre>
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 9
+
+Die Gerade zeigt die Abhängigkeit der Kosten y für einen 
+Leihwagen von der gefahrenen Strecke x.
+Bestimmen Sie die Funktionsgleichung der Geraden. </strong>
+
+<img src="Aufgabe4.jpg">
+
+y = 0,25x + <input type="text" id="Eintrag9" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button></p></pre> 
+ 
+
+                      <script>
+                        function Aufgabe9() { 
+                                                
+                          if (Eintrag9.value=="25") {alert("Richtig"); document.getElementById("Pruef9").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag9.value!=="25" && Eintrag9.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef9").disabled= true; document.getElementById("Eintrag9").value="25"; window.open('LFunkt_Aufgabe9.html');}
+                               
+                          else if (Eintrag9.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+                          
+<p class = "Aufgabe" ><span style = "background-color:white;">Bestimmen Sie die Steigung m der Geraden, die durch folgende Punkte geht:</span></p>
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 10
+
+A(2|1); B(6|9) </strong><button  onclick="window.open('Pytha_Aufgabe4.html');" >Lösung</button></p></pre>
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 11
+
+                       <input type="text" id="Eintrag11" maxlength="1" size="1" style= background-color:yellow ></input>
+A(-1|-2); B(5|5)   m = -----  <button id="Pruef11" onclick="Aufgabe11()">Prüfen</button> 
+                         6</strong></p></pre> 
+ 
+                      <script>
+                        function Aufgabe11() { 
+                                                
+                          if (Eintrag11.value=="7") {alert("Richtig"); document.getElementById("Pruef11").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag11.value!=="7" && Eintrag11.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef11").disabled= true; document.getElementById("Eintrag11").value="7"; window.open('LFunkt_Aufgabe11.html');}
+                               
+                          else if (Eintrag11.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 12
+
+A(6|0); B(3|-3) </strong><button  onclick="window.open('Pytha_Aufgabe4.html');" >Lösung</button></p></pre>
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 13
+                       
+A(-2|5); B(8|-7)  m = </strong><input type="text" id="Eintrag13" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe13() { 
+                                                
+                          if (Eintrag13.value=="-1,2") {alert("Richtig"); document.getElementById("Pruef13").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag13.value!=="-1,2" && Eintrag13.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef13").disabled= true; document.getElementById("Eintrag13").value="-1,2"; window.open('LFunkt_Aufgabe13.html');}
+                               
+                          else if (Eintrag13.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+
+<p class = "Aufgabe" ><span style = "background-color:white;">Bestimmen Sie die Steigung m der Geraden und den Abschnitt b auf der y-Achse:</span></p>  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 14
+
+y = 2x + 1 </strong><button  onclick="window.open('Pytha_Aufgabe4.html');" >Lösung</button></p></pre>
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 15
+                       
+y = -0,5x + 7   m = </strong><input type="text" id="Eintrag15" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef15" onclick="Aufgabe15()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe15() { 
+                                                
+                          if (Eintrag15.value=="-0,5") {alert("Richtig"); document.getElementById("Pruef15").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag15.value!=="-0,5" && Eintrag15.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef15").disabled= true; document.getElementById("Eintrag15").value="-0,5"; window.open('LFunkt_Aufgabe15.html');}
+                               
+                          else if (Eintrag15.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 16
+
+y = -x - 1 </strong><button  onclick="window.open('Pytha_Aufgabe4.html');" >Lösung</button></p></pre>
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 17
+                       
+y = 2x  m = </strong><input type="text" id="Eintrag17" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef17" onclick="Aufgabe17()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe17() { 
+                                                
+                          if (Eintrag17.value=="2") {alert("Richtig"); document.getElementById("Pruef17").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag17.value!=="2" && Eintrag17.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef17").disabled= true; document.getElementById("Eintrag17").value="2"; window.open('LFunkt_Aufgabe17.html');}
+                               
+                          else if (Eintrag17.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+
+<p class = "Aufgabe" ><span style = "background-color:white;">Ermitteln Sie die Funktionsgleichung der dargestellten Geraden:</span></p>
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 18
+
+<img src="Aufgabe7a_L.jpg">
+
+</strong><button  onclick="window.open('Pytha_Aufgabe4.html');" >Lösung</button></p></pre>
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 19
+
+<img src="Aufgabe7b_L.jpg">   
+
+y = -2x + </strong><input type="text" id="Eintrag19" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef19" onclick="Aufgabe19()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe19() { 
+                                                
+                          if (Eintrag19.value=="4") {alert("Richtig"); document.getElementById("Pruef19").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag19.value!=="4" && Eintrag19.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef19").disabled= true; document.getElementById("Eintrag19").value="4"; window.open('LFunkt_Aufgabe19.html');}
+                               
+                          else if (Eintrag19.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 20
+
+<img src="Aufgabe7c_L.jpg">
+
+</strong><button  onclick="window.open('Pytha_Aufgabe4.html');" >Lösung</button></p></pre>
+
+<pre><p class="Aufgabe"><strong>Drei gleich große Gefäße werden mit Wasser gefüllt. 
+Zu Beginn ist Gefäß A leer, im Gefäß B stehen 0,1 l und im Gefäß C stehen 0,5 l Wasser.
+Die Füllgeschwindigkeit beträgt 50 ml/s.
+Ermitteln Sie die Abhängigkeit der Füllmenge M in l von der Füllzeit s für die 3 Gefäße.
+Ergänzen Sie die Wertetabellen.</strong></p></pre>
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 21
+
+Gefäß A: M = 0,05s     s      0       10
+                       M    <input type="text" id="Eintrag21" maxlength="1" size="1" style= background-color:yellow ></input>    0,5</strong><button id="Pruef21" onclick="Aufgabe21()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe21() { 
+                                                
+                          if (Eintrag21.value=="0") {alert("Richtig"); document.getElementById("Pruef21").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag21.value!=="0" && Eintrag21.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef21").disabled= true; document.getElementById("Eintrag21").value="0"; window.open('LFunkt_Aufgabe21.html');}
+                               
+                          else if (Eintrag21.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 22
+
+Gefäß B: </strong><button  onclick="window.open('Pytha_Aufgabe4.html');" >Lösung</button></p></pre>
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 23
+
+Gefäß C: M = <input type="text" id="Eintrag23" maxlength="4" size="1" style= background-color:yellow ></input> + 0,5 </strong><button id="Pruef23" onclick="Aufgabe23()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe23() { 
+                                                
+                          if (Eintrag23.value=="0,05") {alert("Richtig"); document.getElementById("Pruef23").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag23.value!=="0,05" && Eintrag23.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef23").disabled= true; document.getElementById("Eintrag23").value="0,05"; window.open('LFunkt_Aufgabe23.html');}
+                               
+                          else if (Eintrag23.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+
+<p class = "Aufgabe" ><span style = "background-color:white;">Ermitteln Sie die Gleichung der Geraden, wenn gegeben ist:</span></p>                          
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 24
+
+P(3|5); b = 2 </strong><button  onclick="window.open('Pytha_Aufgabe4.html');" >Lösung</button></p></pre>
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 25
+
+P(2|5); b = -1    y = <input type="text" id="Eintrag25" maxlength="1" size="1" style= background-color:yellow ></input> x - 1</strong><button id="Pruef25" onclick="Aufgabe25()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe25() { 
+                                                
+                          if (Eintrag25.value=="3") {alert("Richtig"); document.getElementById("Pruef25").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag25.value!=="3" && Eintrag25.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef25").disabled= true; document.getElementById("Eintrag25").value="3"; window.open('LFunkt_Aufgabe25.html');}
+                               
+                          else if (Eintrag25.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+
+<pre><p class="Aufgabe"><strong>Aufgabe 26
+
+P(2|-2); b = -4   </strong><button  onclick="window.open('Pytha_Aufgabe4.html');" >Lösung</button></p></pre>
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 27
+
+P(2|1); m = 4    y = <input type="text" id="Eintrag27" maxlength="1" size="1" style= background-color:yellow ></input> x - 7</strong><button id="Pruef27" onclick="Aufgabe27()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe27() { 
+                                                
+                          if (Eintrag27.value=="4") {alert("Richtig"); document.getElementById("Pruef27").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag27.value!=="4" && Eintrag27.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef27").disabled= true; document.getElementById("Eintrag27").value="4"; window.open('LFunkt_Aufgabe27.html');}
+                               
+                          else if (Eintrag27.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+
+<pre><p class="Aufgabe"><strong>Aufgabe 28
+
+P((5|7); m = -3    </strong><button  onclick="window.open('Pytha_Aufgabe4.html');" >Lösung</button></p></pre>
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 29
+
+P(6|-4); m = -0,5   y = <input type="text" id="Eintrag29" maxlength="4" size="1" style= background-color:yellow ></input> x - 1</strong><button id="Pruef29" onclick="Aufgabe29()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe29() { 
+                                                
+                          if (Eintrag29.value=="-0,5") {alert("Richtig"); document.getElementById("Pruef29").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag29.value!=="-0,5" && Eintrag29.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef29").disabled= true; document.getElementById("Eintrag29").value="-0,5"; window.open('LFunkt_Aufgabe29.html');}
+                               
+                          else if (Eintrag29.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+
+<pre><p class="Aufgabe"><strong>Aufgabe 30
+
+ <img src="Aufgabe10.jpg">   
+
+Die Talstation einer Seilbahn liegt in einer Höhe von 550 m.
+Die erste Stütze steht in einer Höhe von 820 m und ist 300 m von der Talstation entfernt.
+Die Bergstation ist 700 m von der Talstation entfernt.
+a) Welche Steigung hat die Bahn?   
+b) Ergänzen Sie die Wertetabelle für den.      
+   Graphen von h in Abhängigkeit von l.    Abstand l in m   100     400      
+                                              Höhe h in m   640     910
+c) Auf welcher Höhe liegt die Bergstation?  </strong><button  onclick="window.open('Pytha_Aufgabe30.html');" >Lösung</button></p></pre>
+
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 31
+
+<img src="Aufgabe11.jpg">
+
+Ein gleichmäßig ansteigendes Flugzeug befindet sich 1 200 m nach dem Start 
+auf einer Höhe von 460 m. 4,5 km nach dem Start auf einer Höhe von 955 m.
+a) Berechnen Sie, wie schnell das Flugzeug steigt.    
+b) In welcher Höhe liegt die Startbahn?  </strong>Auf einer Höhe von <input type="text" id="Eintrag31" maxlength="3" size="1" style= background-color:yellow ></input> m.</strong><button id="Pruef31" onclick="Aufgabe31()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe31() { 
+                                                
+                          if (Eintrag31.value=="280") {alert("Richtig"); document.getElementById("Pruef31").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag31.value!=="280" && Eintrag31.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef31").disabled= true; document.getElementById("Eintrag31").value="280"; window.open('LFunkt_Aufgabe31.html');}
+                               
+                          else if (Eintrag31.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+                    
+<pre><p class="Aufgabe"><strong>Aufgabe 32
+
+ <img src="Aufgabe10.jpg">   
+
+4 Werkstätten haben folgende Tarife für einen Ölwechsel:
+
+Werkstatt A: Preis/Liter Öl 7 €; Arbeitspauschale 6 €
+Werkstatt B: Preis/Liter Öl 4,50 €; Arbeitspauschale 8 €
+Werkstatt C: Preis/Liter Öl 6 €, Arbeitspauschale 9 €
+Werkstatt D: Preis/Liter Öl 9 €, Arbeitspauschale 5 €
+a) Wie lautet die Funktionsgleichung für die Kosten K abhängig von 
+der Ölmenge M für die Werkstatt C?   
+b) Welche Werkstatt verlangt 32 € für den Ölwechsel,
+wenn die Ölmenge 3 l beträgt? </strong><button  onclick="window.open('Pytha_Aufgabe30.html');" >Lösung</button></p></pre>
+
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 33
+
+<img src="Aufgabe13a_2.jpg"> <img src="Aufgabe13a_1.jpg">
+
+Eine Motorpumpe hat einen 20 l Tank. Im Betrieb verbraucht sie 2,5 l/Stunde.
+a) Welcher Graph zeigt diesen Sachverhalt?     
+b) Wie lautet seine Funktionsgleichung für die Abhängigkeit des Tankinhalts I
+von der Betriebsdauer t?     
+c) Nach wie viel Stunden sind noch 4 l im Tank? </strong>Nach <input type="text" id="Eintrag33" maxlength="3" size="1" style= background-color:yellow ></input> h</strong> <button id="Pruef33" onclick="Aufgabe33()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe33() { 
+                                                
+                          if (Eintrag33.value=="6,4") {alert("Richtig"); document.getElementById("Pruef33").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag33.value!=="6,4" && Eintrag33.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef33").disabled= true; document.getElementById("Eintrag33").value="6,4"; window.open('LFunkt_Aufgabe33.html');}
+                               
+                          else if (Eintrag33.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+
+<p class = "Aufgabe" ><span style = "background-color:white;">Wie lauten die Funktionsgleichungen der dargestellten Geraden?</span></p>                                                     
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 34
+
+ <img src="Aufgabe14a_L.jpg">   
+
+ </strong><button  onclick="window.open('Pytha_Aufgabe30.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 35
+
+<img src="Aufgabe14b_L.jpg"> >
+
+y = <input type="text" id="Eintrag35" maxlength="4" size="1" style= background-color:yellow ></input> x + 1</strong> <button id="Pruef35" onclick="Aufgabe35()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe35() { 
+                                                
+                          if (Eintrag35.value=="0,05") {alert("Richtig"); document.getElementById("Pruef35").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag35.value!=="0,05" && Eintrag35.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef35").disabled= true; document.getElementById("Eintrag35").value="0,05"; window.open('LFunkt_Aufgabe35.html');}
+                               
+                          else if (Eintrag35.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script> 
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 36
+
+ <img src="Aufgabe14c_L.jpg">   
+
+ </strong><button  onclick="window.open('Pytha_Aufgabe30.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 37
+
+<img src="Aufgabe14d_L.jpg"> >
+
+y = <input type="text" id="Eintrag37" maxlength="6" size="2" style= background-color:yellow ></input> x - 0,5</strong> <button id="Pruef37" onclick="Aufgabe37()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe37() { 
+                                                
+                          if (Eintrag37.value=="-0,005") {alert("Richtig"); document.getElementById("Pruef37").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag37.value!=="-0,005" && Eintrag37.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef37").disabled= true; document.getElementById("Eintrag37").value="-0,005"; window.open('LFunkt_Aufgabe37.html');}
+                               
+                          else if (Eintrag37.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>  
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 38
+
+Die Gerade A hat eine Steigung von 2, die Gerade B eine von -2,5.
+Die beiden Geraden schneiden sich im Punkt (3|-2).
+Wie lauten die Funktionsgleichungen der beiden Geraden? </strong>
+
+</strong><button  onclick="window.open('Pytha_Aufgabe38.html');" >Lösung</button></p></pre>
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 39
+
+ Eine Kerze ist nach einer Brennzeit von einer Stunde von 18 cm auf 16 cm abgebrannt.
+a) Wie lautet die Funktionsgleichung für die Abhängigkeit der Kerzenlänge l von der Brennzeit t?   
+b) Wie lang ist die Kerze nach einer Brennzeit von 3,5 Stunden?                                   
+c) Wie viel Stunden hat die Kerze gebrannt, wenn sie noch 4 cm lang ist? </strong>     
+Sie hat <input type="text" id="Eintrag39" maxlength="1" size="1" style= background-color:yellow ></input> Stunden gebrannt. </strong> <button id="Pruef39" onclick="Aufgabe39()">Prüfen</button></p></pre> 
+ 
+                      <script>
+                        function Aufgabe39() { 
+                                                
+                          if (Eintrag39.value=="7") {alert("Richtig"); document.getElementById("Pruef39").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag39.value!=="7" && Eintrag39.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef39").disabled= true; document.getElementById("Eintrag39").value="7"; window.open('LFunkt_Aufgabe39.html');}
+                               
+                          else if (Eintrag39.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>                            
