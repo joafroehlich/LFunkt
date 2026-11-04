@@ -15,13 +15,34 @@
          
         .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-         .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button {font-size:0.9em; font-family: Verdana, Sans-serif;margin:0.5em; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;} 
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;}  
+                
+                }
         input {background-color:yellow; }
     </style>
     
+	<main>
+
+        
 	
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Lineare Funktionen</p>
@@ -29,15 +50,20 @@
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
-        <pre><p class = "Aufgabe" ><span style = "background-color:white;">Ergänzen Sie die Wertetabellen für die 
-Graphen der Funktionen:</span></p></pre>
+        <h2>Ergänzen Sie die Wertetabellen für die Graphen der Funktionen:</h2>
+
+<div class="check">
 
         <!--//Aufgabe 1-->
 
-  <pre><b><p class ="Aufgabe" >Aufgabe 1
+   <h2>Aufgabe 1</h2>
 
-y = 2x     x      -2      2 
-           y    <input type="text" id="Eintrag1" maxlength="2" size="1" style= background-color:yellow ></input>    4 <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p></pre> 
+<pre>y = 2x     
+
+x      -2      2 
+y       ?      4</pre>
+           
+? = <input type="text" id="Eintrag1" maxlength="2" ></input> <button id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p>
  
 
                       <script>
@@ -54,15 +80,27 @@ y = 2x     x      -2      2
                           
                           </script>
 
-  <pre><p class="Aufgabe">Aufgabe 2
+<!--//Aufgabe 2-->                          
 
-y = -3x     x      -2       2 
-            y       6   <button  onclick="window.open('LFunkt_Aufgabe2.html');" >Lösung</button></p></pre>
+  <h2>Aufgabe 2</h2>
 
-  <pre><p class ="Aufgabe" >Aufgabe 3
+<pre>y = -3x     
 
-y = 0,4x     x       -4        4
-             y     <input type="text" id="Eintrag3" maxlength="4" size="1" style= background-color:yellow ></input>     1,6 <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button></p></pre> 
+x      -2       2 
+y       6</pre>   
+            
+<button  onclick="window.open('LFunkt_Aufgabe2.html');" >Lösung</button></p>
+
+<!--//Aufgabe 3-->
+
+  <h2>Aufgabe 3</h2>
+
+<pre> = 0,4x     
+
+x       -4        4
+y        ?       1,6</pre>    
+             
+? = <input type="text" id="Eintrag3" maxlength="4" ></input> <button id="Pruef3" onclick="Aufgabe3()">Prüfen</button></p>
  
 
                       <script>
@@ -79,26 +117,35 @@ y = 0,4x     x       -4        4
                           
                           </script>
 
-  <pre><p class="Aufgabe">Aufgabe 4
+ <!--//Aufgabe 4-->                         
 
-y = - 0,8x     x       -1        4
-               y       0,8   <button  onclick="window.open('LFunkt_Aufgabe4.html');" >Lösung</button></p></pre>
+  <h2>Aufgabe 4</h2>
 
-  <pre><p class ="Aufgabe" >Aufgabe 5
+<pre>y = -0,8x     
 
-Ein Flugzeug verbraucht auf 200 km 1800 l Kerosin.
+x       -1        4
+y       0,8</pre>   
+
+<button  onclick="window.open('LFunkt_Aufgabe4.html');" >Lösung</button></p>
+
+  <!--//Aufgabe 5-->                         
+
+  <h2>Aufgabe 5</h2><p>
+
+Ein Flugzeug verbraucht auf 200 km 1800 l Kerosin.</p>
 a) Wie lautet die Funktionsgleichung, die den 
-Verbrauch V abhängig von der Strecke s beschreibt?
+Verbrauch V abhängig von der Strecke s beschreibt?</p>
 b) Wie lautet die Funktionsgleichung, die die 
-Strecke s abhängig vom Verbrauch V beschreibt?
+Strecke s abhängig vom Verbrauch V beschreibt?</p>
 c) Ergänzen Sie die Wertetabelle für den Graphen 
-der Funktion V abhängig von s.:  
-   s in km     0        200
-   V in l    <input type="text" id="Eintrag5" maxlength="1" size="1" style= background-color:yellow ></input>     1800   <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button>
+der Funktion V abhängig von s.:</p>  
+   <pre>s in km     0        200
+V in l      ?       1800</pre>
+? = <input type="text" id="Eintrag5" maxlength="1" ></input>  <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button></p>
 d) Welche Strecke hat das Flugzeug nach einem 
-Verbrauch von 10 000 l zurückgelegt?   
+Verbrauch von 10 000 l zurückgelegt?</p>   
 e) Wie viel l Kerosin verbraucht es für eine 
-Strecke von 6 000 km? </p></pre> 
+Strecke von 6 000 km? </p>
  
 
                       <script>
@@ -113,17 +160,29 @@ Strecke von 6 000 km? </p></pre>
                           else if (Eintrag5.value=="") {alert("Bitte eine Eingabe machen")}}
 
                           
-                          </script>               
+                          </script> 
+                          
+  <!--//Aufgabe 6-->                            
 
-  <pre><p class="Aufgabe">Aufgabe 6
+  <h2>Aufgabe 6</h2><p>
 
-y = 0,5x + 4     x      -2      4 
-                 y   <button  onclick="window.open('LFunkt_Aufgabe6.html');" >Lösung</button> 6   </p></pre>
+<pre>y = 0,5x + 4     
 
-  <pre><p class ="Aufgabe" >Aufgabe 7
+x      -2      4 
+y              6</pre> 
+                 
+<button  onclick="window.open('LFunkt_Aufgabe6.html');" >Lösung</button></p>
 
-y = -4x + 60     x      -4      10
-                 y      76    <input type="text" id="Eintrag7" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button></p></pre> 
+    <!--//Aufgabe 7-->                            
+
+  <h2>Aufgabe 7</h2><p>
+
+<pre>y = -4x + 60     
+
+x      -4      10
+y      76       ?</pre>   
+
+? = <input type="text" id="Eintrag7" maxlength="2" ></input> <button id="Pruef7" onclick="Aufgabe7()">Prüfen</button></p></pre> 
  
 
                       <script>
@@ -140,20 +199,28 @@ y = -4x + 60     x      -4      10
                           
                           </script>               
 
-  <pre><p class="Aufgabe">Aufgabe 8
+    <!--//Aufgabe 8-->                            
 
-y = x - 2     x      -3      3
-              y   <button  onclick="window.open('LFunkt_Aufgabe8.html');" >Lösung</button>  1   </p></pre>
+  <h2>Aufgabe 8</h2><p>
 
-  <pre><p class ="Aufgabe" >Aufgabe 9
+<pre>y = x - 2     
+
+x      -3      3
+y              1</pre>
+
+<button  onclick="window.open('LFunkt_Aufgabe8.html');" >Lösung</button> </p>
+
+<!--//Aufgabe 9-->                            
+
+  <h2>Aufgabe 9</h2><p>
 
 Die Gerade zeigt die Abhängigkeit der Kosten y für
 einen Leihwagen von der gefahrenen Strecke x.
-Bestimmen Sie die Funktionsgleichung der Geraden.
+Bestimmen Sie die Funktionsgleichung der Geraden.</p>
 
-<img src="Aufgabe9.jpg">
+<img src="Aufgabe9.jpg"><p>
 
-y = 0,25x + <input type="text" id="Eintrag9" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button></p></pre> 
+y = 0,25x + <input type="text" id="Eintrag9" maxlength="2" ></input> <button id="Pruef9" onclick="Aufgabe9()">Prüfen</button></p>
  
 
                       <script>
@@ -170,18 +237,26 @@ y = 0,25x + <input type="text" id="Eintrag9" maxlength="2" size="1" style= backg
                           
                           </script> 
                           
-<pre><p class = "Aufgabe" ><span style = "background-color:white;">Bestimmen Sie die Steigung m der Geraden, 
-die durch folgende Punkte geht:</span></p></pre>
+<h2>Bestimmen Sie die Steigung m der Geraden, 
+die durch folgende Punkte geht:<h2>
 
-  <pre><p class="Aufgabe">Aufgabe 10
+<!--//Aufgabe 10-->                            
 
-A(2|1); B(6|9) <button  onclick="window.open('LFunkt_Aufgabe10.html');" >Lösung</button></p></pre>
+  <h2>Aufgabe 10</h2><p>
 
-  <pre><p class ="Aufgabe" >Aufgabe 11
+A(2|1); B(6|9)</p> 
 
-                       <input type="text" id="Eintrag11" maxlength="1" size="1" style= background-color:yellow ></input>
-A(-1|-2); B(5|5)   m = -----  <button id="Pruef11" onclick="Aufgabe11()">Prüfen</button> 
-                         6</p></pre> 
+<button  onclick="window.open('LFunkt_Aufgabe10.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 11-->                            
+
+  <h2>Aufgabe 11</h2><p>
+
+<pre>                        ?
+A(-1|-2); B(5|5)   m = ---  
+                        6</pre>
+                        
+? = <input type="text" id="Eintrag11" maxlength="1" ></input>  <button id="Pruef11" onclick="Aufgabe11()">Prüfen</button> </p>
  
                       <script>
                         function Aufgabe11() { 
@@ -197,13 +272,21 @@ A(-1|-2); B(5|5)   m = -----  <button id="Pruef11" onclick="Aufgabe11()">Prüfen
                           
                           </script> 
 
-  <pre><p class="Aufgabe">Aufgabe 12
+<!--//Aufgabe 12-->                            
 
-A(6|0); B(3|-3) <button  onclick="window.open('LFunkt_Aufgabe12.html');" >Lösung</button></p></pre>
+  <h2>Aufgabe 12</h2><p>
 
-  <pre><p class ="Aufgabe" >Aufgabe 13
+A(6|0); B(3|-3)</p> 
+
+<button  onclick="window.open('LFunkt_Aufgabe12.html');" >Lösung</button></p>
+
+<!--//Aufgabe 13-->                            
+
+  <h2>Aufgabe 13</h2><p>
                        
-A(-2|5); B(8|-7)  m = <input type="text" id="Eintrag13" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button></p></pre> 
+A(-2|5); B(8|-7)</p>  
+
+m = <input type="text" id="Eintrag13" maxlength="4" ></input> <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe13() { 
@@ -219,16 +302,24 @@ A(-2|5); B(8|-7)  m = <input type="text" id="Eintrag13" maxlength="4" size="1" s
                           
                           </script> 
 
-<pre><p class = "Aufgabe" ><span style = "background-color:white;">Bestimmen Sie die Steigung m der Geraden 
-und den Abschnitt b auf der y-Achse:</span></p></pre>  
+<h2>Bestimmen Sie die Steigung m der Geraden 
+und den Abschnitt b auf der y-Achse:</h2>
 
-  <pre><p class="Aufgabe">Aufgabe 14
+<!--//Aufgabe 14-->                            
 
-y = 2x + 1 <button  onclick="window.open('LFunkt_Aufgabe14.html');" >Lösung</button></p></pre>
+  <h2>Aufgabe 14</h2><p>
 
-  <pre><p class ="Aufgabe" >Aufgabe 15
+y = 2x + 1</p> 
+
+<button  onclick="window.open('LFunkt_Aufgabe14.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 15-->                            
+
+  <h2>Aufgabe 15</h2><p>
                        
-y = -0,5x + 7   m = <input type="text" id="Eintrag15" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef15" onclick="Aufgabe15()">Prüfen</button></p></pre> 
+y = -0,5x + 7</p>   
+
+m = <input type="text" id="Eintrag15" maxlength="4" ></input> <button id="Pruef15" onclick="Aufgabe15()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe15() { 
@@ -244,13 +335,21 @@ y = -0,5x + 7   m = <input type="text" id="Eintrag15" maxlength="4" size="1" sty
                           
                           </script> 
 
-  <pre><p class="Aufgabe">Aufgabe 16
+<!--//Aufgabe 16-->                            
 
-y = -x - 1 <button  onclick="window.open('LFunkt_Aufgabe16.html');" >Lösung</button></p></pre>
+  <h2>Aufgabe 16</h2><p>
 
-  <pre><p class ="Aufgabe" >Aufgabe 17
+y = -x - 1</p> 
+
+<button  onclick="window.open('LFunkt_Aufgabe16.html');" >Lösung</button></p>
+
+<!--//Aufgabe 17-->                            
+
+  <h2>Aufgabe 17</h2><p>
                        
-y = 2x  m = <input type="text" id="Eintrag17" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef17" onclick="Aufgabe17()">Prüfen</button></p></pre> 
+y = 2x</p>  
+
+m = <input type="text" id="Eintrag17" maxlength="1" ></input> <button id="Pruef17" onclick="Aufgabe17()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe17() { 
@@ -266,20 +365,24 @@ y = 2x  m = <input type="text" id="Eintrag17" maxlength="1" size="1" style= back
                           
                           </script>
 
-<pre><p class = "Aufgabe" ><span style = "background-color:white;">Ermitteln Sie die Funktionsgleichung der 
-dargestellten Geraden:</span></p></pre>
+<h2>Ermitteln Sie die Funktionsgleichung der 
+dargestellten Geraden:</h2>
 
-  <pre><p class="Aufgabe">Aufgabe 18
+<!--//Aufgabe 18-->                            
 
-<img src="Aufgabe18_L.jpg">
+  <h2>Aufgabe 18</h2><p>
 
-<button  onclick="window.open('LFunkt_Aufgabe18.html');" >Lösung</button></p></pre>
+<img src="Aufgabe18_L.jpg"></p>
 
-  <pre><p class ="Aufgabe" >Aufgabe 19
+<button  onclick="window.open('LFunkt_Aufgabe18.html');" >Lösung</button></p>
 
-<img src="Aufgabe19.jpg">   
+<!--//Aufgabe 19-->                            
 
-y = -2x + <input type="text" id="Eintrag19" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef19" onclick="Aufgabe19()">Prüfen</button></p></pre> 
+  <h2>Aufgabe 19</h2><p>
+
+<img src="Aufgabe19.jpg"></p>   
+
+y = -2x + <input type="text" id="Eintrag19" maxlength="1" ></input> <button id="Pruef19" onclick="Aufgabe19()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe19() { 
@@ -295,24 +398,36 @@ y = -2x + <input type="text" id="Eintrag19" maxlength="1" size="1" style= backgr
                           
                           </script>
 
-  <pre><p class="Aufgabe">Aufgabe 20
+<!--//Aufgabe 20-->                            
 
-<img src="Aufgabe20.jpg">
+  <h2>Aufgabe 20</h2><p>
 
-<button  onclick="window.open('LFunkt_Aufgabe20.html');" >Lösung</button></p></pre>
+<img src="Aufgabe20.jpg"></p>
 
-<pre><p class ="Aufgabe" >Aufgabe 21
+<button  onclick="window.open('LFunkt_Aufgabe20.html');" >Lösung</button></p>
 
-Drei gleich große Gefäße werden mit Wasser 
+<p>Drei gleich große Gefäße werden mit Wasser 
 gefüllt. Zu Beginn ist Gefäß A leer, im Gefäß B
 stehen 0,1 l und im Gefäß C stehen 0,5 l Wasser.
 Die Füllgeschwindigkeit beträgt 50 ml/s.
 Ermitteln Sie die Abhängigkeit der Füllmenge M 
 in l von der Füllzeit s für die 3 Gefäße. 
-Ergänzen Sie die Wertetabellen.
+Ergänzen Sie die Wertetabellen.</p>
 
-Gefäß A: M = 0,05s     s      0       10
-                       M    <input type="text" id="Eintrag21" maxlength="1" size="1" style= background-color:yellow ></input>    0,5<button id="Pruef21" onclick="Aufgabe21()">Prüfen</button></p></pre> 
+<!--//Aufgabe 21-->                            
+
+  <h2>Aufgabe 21</h2><p>
+
+<img src="Aufgabe21.jpg"></p>    
+
+<pre>Gefäß A: 
+
+M = 0,05s     
+
+s      0       10
+M      ?      0,5</pre>
+
+? = <input type="text" id="Eintrag21" maxlength="1" ></input> <button id="Pruef21" onclick="Aufgabe21()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe21() { 
@@ -328,13 +443,25 @@ Gefäß A: M = 0,05s     s      0       10
                           
                           </script>
 
-  <pre><p class="Aufgabe">Aufgabe 22
+<!--//Aufgabe 22-->                            
 
-Gefäß B: <button  onclick="window.open('LFunkt_Aufgabe22.html');" >Lösung</button></p></pre>
+  <h2>Aufgabe 22</h2><p>
 
-  <pre><p class ="Aufgabe" >Aufgabe 23
+Gefäß B:<P>
 
-Gefäß C: M = <input type="text" id="Eintrag23" maxlength="4" size="1" style= background-color:yellow ></input> + 0,5 <button id="Pruef23" onclick="Aufgabe23()">Prüfen</button></p></pre> 
+<img src="Aufgabe22.jpg"></p>   
+
+<button  onclick="window.open('LFunkt_Aufgabe22.html');" >Lösung</button></p>
+
+<!--//Aufgabe 23-->                            
+
+  <h2>Aufgabe 23</h2><p>
+
+<img src="Aufgabe23.jpg"></p>   
+
+Gefäß C:</p> 
+
+M = <input type="text" id="Eintrag23" maxlength="4" ></input> s + 0,5 <button id="Pruef23" onclick="Aufgabe23()">Prüfen</button></p></pre> 
  
                       <script>
                         function Aufgabe23() { 
@@ -350,16 +477,23 @@ Gefäß C: M = <input type="text" id="Eintrag23" maxlength="4" size="1" style= b
                           
                           </script>
 
-<pre><p class = "Aufgabe" ><span style = "background-color:white;">Ermitteln Sie die Gleichung der Geraden, wenn 
-gegeben ist:</span></p></pre>                          
+<h2>Ermitteln Sie die Gleichung der Geraden, wenn gegeben ist:</h2>                        
 
-  <pre><p class="Aufgabe">Aufgabe 24
+<!--//Aufgabe 24-->                            
 
-P(3|5); b = 2 <button  onclick="window.open('LFunkt_Aufgabe24.html');" >Lösung</button></p></pre>
+  <h2>Aufgabe 24</h2><p>
 
-  <pre><p class ="Aufgabe" >Aufgabe 25
+P(3|5); b = 2</p> 
 
-P(2|5); b = -1    y = <input type="text" id="Eintrag25" maxlength="1" size="1" style= background-color:yellow ></input> x - 1<button id="Pruef25" onclick="Aufgabe25()">Prüfen</button></p></pre> 
+<button  onclick="window.open('LFunkt_Aufgabe24.html');" >Lösung</button></p>
+
+<!--//Aufgabe 25-->                            
+
+  <h2>Aufgabe 25</h2><p>
+
+P(2|5); b = -1</p>    
+
+y = <input type="text" id="Eintrag25" maxlength="1" ></input> x - 1  <button id="Pruef25" onclick="Aufgabe25()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe25() { 
@@ -375,13 +509,21 @@ P(2|5); b = -1    y = <input type="text" id="Eintrag25" maxlength="1" size="1" s
                           
                           </script>
 
-<pre><p class="Aufgabe">Aufgabe 26
+<!--//Aufgabe 26-->                            
 
-P(2|-2); b = -4   <button  onclick="window.open('LFunkt_Aufgabe26.html');" >Lösung</button></p></pre>
+  <h2>Aufgabe 26</h2><p>
 
-  <pre><p class ="Aufgabe" >Aufgabe 27
+P(2|-2); b = -4</p>   
 
-P(2|1); m = 4    y = <input type="text" id="Eintrag27" maxlength="1" size="1" style= background-color:yellow ></input> x - 7<button id="Pruef27" onclick="Aufgabe27()">Prüfen</button></p></pre> 
+<button  onclick="window.open('LFunkt_Aufgabe26.html');" >Lösung</button></p>
+
+<!--//Aufgabe 27-->                            
+
+  <h2>Aufgabe 27</h2><p>
+
+P(2|1); m = 4</p>    
+
+y = <input type="text" id="Eintrag27" maxlength="1" ></input> x - 7   <button id="Pruef27" onclick="Aufgabe27()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe27() { 
@@ -397,13 +539,21 @@ P(2|1); m = 4    y = <input type="text" id="Eintrag27" maxlength="1" size="1" st
                           
                           </script>
 
-<pre><p class="Aufgabe">Aufgabe 28
+<!--//Aufgabe 28-->                            
 
-P((5|7); m = -3    <button  onclick="window.open('LFunkt_Aufgabe28.html');" >Lösung</button></p></pre>
+  <h2>Aufgabe 28</h2><p>
 
-  <pre><p class ="Aufgabe" >Aufgabe 29
+P((5|7); m = -3</p>    
 
-P(6|-4); m = -0,5   y = <input type="text" id="Eintrag29" maxlength="4" size="1" style= background-color:yellow ></input> x - 1<button id="Pruef29" onclick="Aufgabe29()">Prüfen</button></p></pre> 
+<button  onclick="window.open('LFunkt_Aufgabe28.html');" >Lösung</button></p>
+
+<!--//Aufgabe 29-->                            
+
+  <h2>Aufgabe 29</h2><p>
+
+P(6|-4); m = -0,5</p>   
+
+y = <input type="text" id="Eintrag29" maxlength="4" ></input> x - 1   <button id="Pruef29" onclick="Aufgabe29()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe29() { 
@@ -419,36 +569,40 @@ P(6|-4); m = -0,5   y = <input type="text" id="Eintrag29" maxlength="4" size="1"
                           
                           </script>
 
-<pre><p class="Aufgabe">Aufgabe 30
+<!--//Aufgabe 30-->                            
 
- <img src="Aufgabe10.jpg">   
+  <h2>Aufgabe 30</h2><p>
+
+ <img src="Aufgabe10.jpg"></p>   
 
 Die Talstation einer Seilbahn liegt in einer Höhe 
 von 550 m.Die erste Stütze steht in einer Höhe 
 von 820 m und ist 300 m von der Talstation 
 entfernt.Die Bergstation ist 700 m von der 
-Talstation entfernt.
-a) Welche Steigung hat die Bahn?   
+Talstation entfernt.</p>
+a) Welche Steigung hat die Bahn?</p>   
 b) Ergänzen Sie die Wertetabelle für den      
    Graphen von h in Abhängigkeit von l.    
-   Abstand l in m   100     400      
-      Höhe h in m   640     910
-c) Auf welcher Höhe liegt die Bergstation?  
-<button  onclick="window.open('LFunkt_Aufgabe30.html');" >Lösung</button></p></pre>
+   <pre>Abstand l in m   100     400      
+Höhe h in m      640     </pre>
+c) Auf welcher Höhe liegt die Bergstation?</p>  
 
+<button  onclick="window.open('LFunkt_Aufgabe30.html');" >Lösung</button></p>
 
-<pre><p class ="Aufgabe" >Aufgabe 31
+<!--//Aufgabe 31-->                            
 
-<img src="Aufgabe11.jpg">
+  <h2>Aufgabe 31</h2><p>
+
+<img src="Aufgabe11.jpg"></p>
 
 Ein gleichmäßig ansteigendes Flugzeug befindet 
 sich 1 200 m nach dem Start auf einer Höhe von 
 460 m. 4,5 km nach dem Start auf einer Höhe von 
-955 m.
-a) Berechnen Sie, wie schnell das Flugzeug steigt.
-b) In welcher Höhe liegt die Startbahn?  
+955 m.</p>
+a) Berechnen Sie, wie schnell das Flugzeug steigt.</p>
+b) In welcher Höhe liegt die Startbahn?</p>  
 
-Auf einer Höhe von <input type="text" id="Eintrag31" maxlength="3" size="1" style= background-color:yellow ></input> m.<button id="Pruef31" onclick="Aufgabe31()">Prüfen</button></p></pre> 
+Auf einer Höhe von <input type="text" id="Eintrag31" maxlength="3"  ></input> m.   <button id="Pruef31" onclick="Aufgabe31()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe31() { 
@@ -464,41 +618,46 @@ Auf einer Höhe von <input type="text" id="Eintrag31" maxlength="3" size="1" sty
                           
                           </script>
                     
-<pre><p class="Aufgabe">Aufgabe 32
+<!--//Aufgabe 32-->                            
+
+  <h2>Aufgabe 32</h2><p>
 
 4 Werkstätten haben folgende Tarife für einen 
-Ölwechsel:
-Werkstatt A: 
-Preis/Liter Öl 7 €; Arbeitspauschale 6 €
-Werkstatt B: 
-Preis/Liter Öl 4,50 €; Arbeitspauschale 8 €
-Werkstatt C: 
-Preis/Liter Öl 6 €, Arbeitspauschale 9 €
-Werkstatt D: 
-Preis/Liter Öl 9 €, Arbeitspauschale 5 €
+Ölwechsel:</p>
+Werkstatt A:</p> 
+Preis/Liter Öl 7 €; Arbeitspauschale 6 €</p>
+Werkstatt B:</p> 
+Preis/Liter Öl 4,50 €; Arbeitspauschale 8 €</p>
+Werkstatt C:</p> 
+Preis/Liter Öl 6 €, Arbeitspauschale 9 €</p>
+Werkstatt D:</p> 
+Preis/Liter Öl 9 €, Arbeitspauschale 5 €</p>
 a) Wie lautet die Funktionsgleichung für die 
 Kosten K abhängig von der Ölmenge M für die 
-Werkstatt C?   
+Werkstatt C?</p>   
 b) Welche Werkstatt verlangt 32 € für den 
-Ölwechsel,wenn die Ölmenge 3 l beträgt? 
-<button  onclick="window.open('LFunkt_Aufgabe32.html');" >Lösung</button></p></pre>
+Ölwechsel,wenn die Ölmenge 3 l beträgt?</p> 
+
+<button  onclick="window.open('LFunkt_Aufgabe32.html');" >Lösung</button></p>
 
 
-<pre><p class ="Aufgabe" >Aufgabe 33
+<!--//Aufgabe 33-->                            
 
-<img src="Aufgabe13a_1.jpg"> 
+  <h2>Aufgabe 33</h2><p>
 
-<img src="Aufgabe13a_2.jpg">
+<img src="Aufgabe13a_1.jpg"></p> 
+
+<img src="Aufgabe13a_2.jpg"></p>
 
 Eine Motorpumpe hat einen 20 l Tank. Im Betrieb 
-verbraucht sie 2,5 l/Stunde.
-a) Welcher Graph zeigt diesen Sachverhalt?     
+verbraucht sie <br class ="br-desk">2,5 l/Stunde.</p>
+a) Welcher Graph zeigt diesen Sachverhalt?</p>     
 b) Wie lautet seine Funktionsgleichung für die 
 Abhängigkeit des Tankinhalts I
-von der Betriebsdauer t?     
-c) Nach wie viel Stunden sind noch 4 l im Tank? 
+von der Betriebsdauer t?</p>     
+c) Nach wie viel Stunden sind noch 4 l im Tank?</p> 
 
-Nach <input type="text" id="Eintrag33" maxlength="3" size="1" style= background-color:yellow ></input> h <button id="Pruef33" onclick="Aufgabe33()">Prüfen</button></p></pre> 
+Nach <input type="text" id="Eintrag33" maxlength="3" ></input> h <button id="Pruef33" onclick="Aufgabe33()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe33() { 
@@ -514,20 +673,23 @@ Nach <input type="text" id="Eintrag33" maxlength="3" size="1" style= background-
                           
                           </script>
 
-<pre><p class = "Aufgabe" ><span style = "background-color:white;">Wie lauten die Funktionsgleichungen der 
-dargestellten Geraden?</span></p></pre>                                                     
+<h2>Wie lauten die Funktionsgleichungen der dargestellten Geraden?</h2>                                                   
                           
-<pre><p class="Aufgabe">Aufgabe 34
+<!--//Aufgabe 34-->                            
 
- <img src="Aufgabe34.jpg">   
+  <h2>Aufgabe 34</h2><p>
 
- <button  onclick="window.open('LFunkt_Aufgabe34.html');" >Lösung</button></p></pre>
+ <img src="Aufgabe34.jpg"></p>   
 
-<pre><p class ="Aufgabe" >Aufgabe 35
+ <button  onclick="window.open('LFunkt_Aufgabe34.html');" >Lösung</button></p>
 
-<img src="Aufgabe35.jpg"> >
+<!--//Aufgabe 35-->                            
 
-y = <input type="text" id="Eintrag35" maxlength="4" size="1" style= background-color:yellow ></input> x + 1 <button id="Pruef35" onclick="Aufgabe35()">Prüfen</button></p></pre> 
+  <h2>Aufgabe 35</h2><p>
+
+<img src="Aufgabe35.jpg"></p> 
+
+y = <input type="text" id="Eintrag35" maxlength="4" ></input> x + 1 <button id="Pruef35" onclick="Aufgabe35()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe35() { 
@@ -543,17 +705,21 @@ y = <input type="text" id="Eintrag35" maxlength="4" size="1" style= background-c
                           
                           </script> 
                           
-<pre><p class="Aufgabe">Aufgabe 36
+<!--//Aufgabe 36-->                            
 
- <img src="Aufgabe36.jpg">   
+  <h2>Aufgabe 36</h2><p>
+
+ <img src="Aufgabe36.jpg"></p>   
 
  <button  onclick="window.open('LFunkt_Aufgabe36.html');" >Lösung</button></p></pre>
 
-<pre><p class ="Aufgabe" >Aufgabe 37
+<!--//Aufgabe 37-->                            
 
-<img src="Aufgabe37.jpg"> >
+  <h2>Aufgabe 37</h2><p>
 
-y = <input type="text" id="Eintrag37" maxlength="6" size="2" style= background-color:yellow ></input> x - 0,5 <button id="Pruef37" onclick="Aufgabe37()">Prüfen</button></p></pre> 
+<img src="Aufgabe37.jpg"></p> 
+
+y = <input type="text" id="Eintrag37" maxlength="6" ></input> x - 0,5 <button id="Pruef37" onclick="Aufgabe37()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe37() { 
@@ -569,26 +735,33 @@ y = <input type="text" id="Eintrag37" maxlength="6" size="2" style= background-c
                           
                           </script>  
                           
-<pre><p class="Aufgabe">Aufgabe 38
+<!--//Aufgabe 38-->                            
+
+  <h2>Aufgabe 38</h2><p>
 
 Die Gerade A hat eine Steigung von 2, die Gerade B 
 eine von -2,5. Die beiden Geraden schneiden sich 
 im Punkt (3|-2).
 Wie lauten die Funktionsgleichungen der beiden 
-Geraden? <button  onclick="window.open('LFunkt_Aufgabe38.html');" >Lösung</button></p></pre>
+Geraden?</p> 
 
-<pre><p class ="Aufgabe" >Aufgabe 39
+<button  onclick="window.open('LFunkt_Aufgabe38.html');" >Lösung</button></p>
+
+<!--//Aufgabe 39-->                            
+
+  <h2>Aufgabe 39</h2><p>
 
 Eine Kerze ist nach einer Brennzeit von einer 
-Stunde von 18 cm auf 16 cm abgebrannt.
+Stunde von 18 cm auf 16 cm abgebrannt.</p>
 a) Wie lautet die Funktionsgleichung für die 
 Abhängigkeit der Kerzenlänge l von der 
-Brennzeit t?   
+Brennzeit t?</p>   
 b) Wie lang ist die Kerze nach einer Brennzeit 
-von 3,5 Stunden?                                   
+von 3,5 Stunden?</p>                                   
 c) Wie viel Stunden hat die Kerze gebrannt, wenn 
-sie noch 4 cm lang ist? 
-Sie hat <input type="text" id="Eintrag39" maxlength="1" size="1" style= background-color:yellow ></input> Stunden gebrannt. <button id="Pruef39" onclick="Aufgabe39()">Prüfen</button></p></pre> 
+sie noch 4 cm lang ist?</p>
+
+Sie hat <input type="text" id="Eintrag39" maxlength="1" ></input> Stunden gebrannt. <button id="Pruef39" onclick="Aufgabe39()">Prüfen</button></p></pre> 
  
                       <script>
                         function Aufgabe39() { 
@@ -604,20 +777,23 @@ Sie hat <input type="text" id="Eintrag39" maxlength="1" size="1" style= backgrou
                           
                           </script> 
                           
-<pre><p class="Aufgabe">Aufgabe 40
+<!--//Aufgabe 40-->                            
+
+  <h2>Aufgabe 40</h2><p>
 
 Ein Autoverleih verlangt 0,10 € pro gefahrenen 
-Kilometer und eine Grundgebühr von 55 € pro Tag.
+Kilometer und eine Grundgebühr von 55 € pro Tag.</p>
 a) Wie lautet die Funktionsgleichung für die 
 Abhängigkeit der Kosten K von der gefahrenen 
-Strecke S pro Tag? 
-b) Vervollständigen Sie die Wertetabelle.    
-S     0          200      
-K    55
-c) Wie viel kosten 250 km an einem Tag?       
+Strecke S pro Tag?</p> 
+b) Vervollständigen Sie die Wertetabelle.</p>    
+<pre>S     0          200      
+K    55</pre>
+c) Wie viel kosten 250 km an einem Tag?</p>       
 d) Welche Strecke hat ein Kunde zurückgelegt, wenn 
-er 124 € bezahlen muss?    
-<button  onclick="window.open('LFunkt_Aufgabe40.html');" >Lösung</button></p></pre>
+er 124 € bezahlen muss?</p>
+
+<button  onclick="window.open('LFunkt_Aufgabe40.html');" >Lösung</button></p>
 
 <pre><p class ="Aufgabe" >Aufgabe 41
 
